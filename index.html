@@ -1,4 +1,20 @@
-        <!-- Slide 9: Futuro de la IA -->
+      <!-- Slide 9: Futuro de la IA -->
+        <div class="slide">
+            <div class="slide-content">
+                <div style="font-size: 3em; margin-bottom: 20px;">🔮🚀</div>
+                <h2>El Futuro de la Inteligencia Artificial</h2>
+                <div class="highlight-card">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 15px; font-size: 2em; margin-bottom: 20px;">
+                        <span>🚀</span>
+                        <span>⚖️</span>
+                        <span>🛡️</span>
+                        <span>👥</span>
+                        <span>🌍</span>
+                    </div>
+                    <p>El desarrollo futuro de la IA requiere un equilibrio cuidadoso entre la innovación tecnológica y la protección de los derechos fundamentales. Es esencial establecer marcos regulatorios adaptativos que fomenten el desarrollo responsable mientras salvaguardan los valores democráticos y los derechos humanos.</p>
+                </div>
+            </div>
+        </div>        <!-- Slide 9: Futuro de la IA -->
         <div class="slide">
             <div class="slide-content">
                 <div style="font-size: 3em; margin-bottom: 20px;">🔮🚀🌟</div>
@@ -76,14 +92,16 @@
             left: 0;
             width: 100%;
             min-height: 100vh;
-            padding: 60px 40px;
+            max-height: 100vh;
+            padding: 40px 40px 80px 40px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             opacity: 0;
             transform: translateX(100%);
             transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
         }
 
         .slide.active {
@@ -100,10 +118,11 @@
             width: 100%;
             text-align: center;
             z-index: 2;
+            padding-top: 20px;
         }
 
         h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             font-weight: 800;
             margin-bottom: 30px;
             background: linear-gradient(135deg, #60a5fa, #a78bfa, #34d399);
@@ -115,9 +134,9 @@
         }
 
         h2 {
-            font-size: 2.8em;
+            font-size: 2.5em;
             font-weight: 700;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             background: linear-gradient(135deg, #3b82f6, #8b5cf6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -132,10 +151,10 @@
         }
 
         p {
-            font-size: 1.3em;
-            line-height: 1.7;
+            font-size: 1.2em;
+            line-height: 1.6;
             color: #cbd5e1;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -173,21 +192,22 @@
 
         .points-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
         }
 
         .point-card {
             background: rgba(15, 23, 42, 0.8);
             border: 1px solid rgba(148, 163, 184, 0.2);
             border-radius: 16px;
-            padding: 25px;
+            padding: 20px;
             text-align: left;
             transform: scale(0.9);
             opacity: 0;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
+            min-height: 140px;
         }
 
         .point-card.animate {
@@ -345,21 +365,22 @@
 
         .conclusions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
         }
 
         .conclusion-card {
             background: rgba(15, 23, 42, 0.9);
             border: 1px solid rgba(148, 163, 184, 0.2);
             border-radius: 20px;
-            padding: 30px;
+            padding: 20px;
             text-align: left;
             transform: translateY(30px);
             opacity: 0;
             transition: all 0.6s ease;
             backdrop-filter: blur(15px);
+            min-height: 160px;
         }
 
         .conclusion-card.animate {
@@ -406,20 +427,30 @@
 
         @media (max-width: 768px) {
             .slide {
-                padding: 40px 20px;
+                padding: 30px 15px 70px 15px;
             }
             
             h1 {
-                font-size: 2.5em;
+                font-size: 2.2em;
             }
             
             h2 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
             
             .points-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 15px;
+            }
+            
+            .conclusions-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .point-card, .conclusion-card {
+                padding: 15px;
+                min-height: auto;
             }
         }
 
@@ -475,9 +506,8 @@
         <!-- Slide 1: Título Principal -->
         <div class="slide active">
             <div class="slide-content">
-                <div style="font-size: 4em; margin-bottom: 20px;">🤖⚖️🛡️</div>
+                <div style="font-size: 4em; margin-bottom: 20px;">🤖⚖️</div>
                 <h1>Inteligencia Artificial y Derechos Fundamentales</h1>
-                <div style="font-size: 2em; margin: 20px 0;">🌐💡⚡</div>
                 <div class="authors">
                     👥 Viviana Pulgarín Marín • Vanessa Martinez • Madeleyn Velásquez • Ramiro Rincón • Sebastian Florez
                 </div>
@@ -487,26 +517,22 @@
         <!-- Slide 2: Caso de Estudio -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">📚⚖️🔍</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">📚⚖️</div>
                 <h2>Caso de Estudio</h2>
                 <h3>🏛️ Sentencia T-323 de 2024 🇨🇴</h3>
                 <div class="highlight-card">
-                    <div style="font-size: 2em; margin-bottom: 15px;">👨‍⚖️🤖📖</div>
                     <p><strong>Sobre el uso de IA por jueces de la República</strong></p>
                     <p>Esta sentencia establece precedentes fundamentales sobre cómo los jueces pueden y deben utilizar herramientas de inteligencia artificial en el ejercicio de sus funciones jurisdiccionales, marcando un hito en la jurisprudencia nacional sobre tecnología y justicia.</p>
-                    <div style="font-size: 1.5em; margin-top: 15px;">📊⚡🎯</div>
                 </div>
                 <p>📋 <strong>Marco regulatorio para la implementación responsable de IA en el sistema judicial colombiano</strong></p>
-                <div style="font-size: 2em; margin-top: 20px;">🛡️⚖️📜</div>
             </div>
         </div>
 
         <!-- Slide 3: Definición -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">🧠💭📊</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">🧠💭</div>
                 <h2>Definición del Tema de Estudio</h2>
-                <div style="font-size: 2em; margin-bottom: 15px;">🤖➡️🏛️</div>
                 <div class="highlight-card">
                     <div style="display: flex; justify-content: center; align-items: center; gap: 20px; font-size: 2.5em; margin-bottom: 20px;">
                         <span>🤖</span>
@@ -516,124 +542,100 @@
                         <span>⚖️</span>
                     </div>
                     <p>La IA comprende sistemas capaces de procesar datos y tomar decisiones con autonomía. Su expansión plantea retos jurídicos y éticos al afectar el ejercicio y garantía de los derechos fundamentales, en especial la dignidad humana, la igualdad y la privacidad.</p>
-                    <div style="font-size: 2em; margin-top: 15px;">👤🏛️🔒</div>
                 </div>
                 <h3>⚖️ Equilibrando innovación tecnológica con protección de derechos 🛡️</h3>
-                <div style="display: flex; justify-content: center; gap: 30px; font-size: 2.5em; margin-top: 20px;">
-                    <span title="Innovación">🚀</span>
-                    <span title="Balance">⚖️</span>
-                    <span title="Derechos">🛡️</span>
-                </div>
             </div>
         </div>
 
         <!-- Slide 4: Impactos Jurídicos -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">⚠️🚨📍</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">⚠️🚨</div>
                 <h2>Impacto en el Ámbito Jurídico</h2>
-                <div style="font-size: 2em; margin-bottom: 20px;">🔍⚖️💥</div>
                 <div class="risk-list">
                     <div class="risk-item">
-                        <h4>🔐 Privacidad 👤💾</h4>
+                        <h4>🔐 Privacidad</h4>
                         <p>Uso masivo de datos personales sin consentimiento.</p>
                     </div>
                     <div class="risk-item">
-                        <h4>⚖️ Igualdad 🤝⚡</h4>
+                        <h4>⚖️ Igualdad</h4>
                         <p>Algoritmos que reproducen sesgos y discriminación.</p>
                     </div>
                     <div class="risk-item">
-                        <h4>🗣️ Libertad de expresión 📢🚫</h4>
+                        <h4>🗣️ Libertad de expresión</h4>
                         <p>Riesgo de censura o difusión de contenidos dañinos.</p>
                     </div>
                     <div class="risk-item">
-                        <h4>💼 Trabajo 👷‍♂️🤖</h4>
+                        <h4>💼 Trabajo</h4>
                         <p>Automatización que afecta estabilidad y acceso al empleo.</p>
                     </div>
                     <div class="risk-item">
-                        <h4>🧬 Bioética 🏥⚕️</h4>
+                        <h4>🧬 Bioética</h4>
                         <p>Dilemas en salud, genética y dignidad humana.</p>
                     </div>
                     <div class="risk-item">
-                        <h4>🛡️ Seguridad 📹🚁</h4>
+                        <h4>🛡️ Seguridad</h4>
                         <p>Vigilancia y armas autónomas con riesgos éticos y legales.</p>
                     </div>
                     <div class="risk-item">
-                        <h4>⚖️ Debido proceso 🔍👨‍⚖️</h4>
+                        <h4>⚖️ Debido proceso</h4>
                         <p>Sistemas opacos que afectan transparencia, imparcialidad y defensa.</p>
                     </div>
                 </div>
-                <div style="font-size: 2.5em; margin-top: 20px;">🚨⚖️🛡️</div>
             </div>
         </div>
 
         <!-- Slide 5: Derechos en Riesgo -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">🛡️⚖️🚨</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">🛡️⚖️</div>
                 <h2>Principales Derechos Fundamentales en Riesgo</h2>
-                <div style="font-size: 2em; margin-bottom: 20px;">👤🔒⚖️📋</div>
                 <div class="points-grid">
                     <div class="point-card">
-                        <span class="emoji">🚫❌</span>
+                        <span class="emoji">🚫</span>
                         <h4>Derecho a la No Discriminación</h4>
                         <p>Algoritmos sesgados pueden perpetuar discriminación</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">👥⚖️🤖</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">🔒🛡️</span>
+                        <span class="emoji">🔒</span>
                         <h4>Derecho a la Protección de Datos y Privacidad</h4>
                         <p>Recolección masiva de información personal</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">📊💾👤</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">⚖️🏛️</span>
+                        <span class="emoji">⚖️</span>
                         <h4>Derecho al Acceso a la Justicia</h4>
                         <p>Barreras tecnológicas en sistemas judiciales</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">🚪💻⚖️</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">📋✅</span>
+                        <span class="emoji">📋</span>
                         <h4>Derecho al Debido Proceso</h4>
                         <p>Falta de transparencia en decisiones automatizadas</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">🔍👨‍⚖️📖</div>
                     </div>
                 </div>
-                <div style="font-size: 3em; margin-top: 30px;">⚖️=👤+🤖+🛡️</div>
             </div>
         </div>
 
         <!-- Slide 6: Marco Internacional -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">🌍🏛️📜</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">🌍📜</div>
                 <h2>Marco Jurídico Internacional</h2>
-                <div style="font-size: 2em; margin-bottom: 20px;">🇪🇺🌐📋</div>
                 <div class="points-grid">
                     <div class="point-card">
-                        <span class="emoji">🇪🇺🛡️</span>
+                        <span class="emoji">🇪🇺</span>
                         <h4>Unión Europea</h4>
                         <p>Reglamento General de Protección de Datos (RGPD) y legislación contra la discriminación</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">📊🔒⚖️</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">📜⚖️</span>
+                        <span class="emoji">📜</span>
                         <h4>Carta Ética Europea</h4>
                         <p>Sobre el uso de la IA en los sistemas judiciales y su entorno (2018)</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">🏛️🤖📖</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">🌐🏢</span>
+                        <span class="emoji">🌐</span>
                         <h4>OCDE</h4>
                         <p>Recomendación del Consejo sobre Inteligencia Artificial (2019)</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">💡🤖🌍</div>
                     </div>
-                </div>
-                <div style="display: flex; justify-content: center; gap: 30px; font-size: 2.5em; margin-top: 30px;">
-                    <span title="Europa">🇪🇺</span>
-                    <span title="Mundo">🌐</span>
-                    <span title="Cooperación">🤝</span>
-                    <span title="IA">🤖</span>
                 </div>
             </div>
         </div>
@@ -641,37 +643,24 @@
         <!-- Slide 7: Marco Nacional -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">🇨🇴🏛️📖</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">🇨🇴📖</div>
                 <h2>Marco Jurídico Nacional</h2>
-                <div style="font-size: 2em; margin-bottom: 20px;">📜⚖️🇨🇴</div>
                 <div class="points-grid">
                     <div class="point-card">
-                        <span class="emoji">📖🇨🇴</span>
+                        <span class="emoji">📖</span>
                         <h4>Constitución Política</h4>
                         <p>Artículos 29, 48, 228 - Protección de derechos fundamentales</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">⚖️👤🛡️</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">🏛️⚖️</span>
+                        <span class="emoji">🏛️</span>
                         <h4>Sentencia T-323 de 2024</h4>
                         <p>Sentencia hito frente al tema de IA en el sistema judicial</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">🚀🤖📊</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">📋🔒</span>
+                        <span class="emoji">📋</span>
                         <h4>Leyes Estatutarias</h4>
                         <p>Ley 1266 de 2008 y Ley 1581 de 2012 sobre protección de datos</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">🛡️💾👤</div>
                     </div>
-                </div>
-                <div style="font-size: 2.5em; margin-top: 30px; display: flex; justify-content: center; align-items: center; gap: 20px;">
-                    <span>🇨🇴</span>
-                    <span>+</span>
-                    <span>⚖️</span>
-                    <span>+</span>
-                    <span>🤖</span>
-                    <span>=</span>
-                    <span>🛡️</span>
                 </div>
             </div>
         </div>
@@ -679,39 +668,32 @@
         <!-- Slide 8: Aspectos Clave Sentencia -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">🔑⚖️🚨</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">🔑⚖️</div>
                 <h2>Aspectos Clave de la Sentencia T-323</h2>
-                <div style="font-size: 2em; margin-bottom: 20px;">📊👨‍⚖️🤖</div>
                 <div class="points-grid">
                     <div class="point-card">
-                        <span class="emoji">🚫❌</span>
+                        <span class="emoji">🚫</span>
                         <h4>Prohibición de Sustitución</h4>
                         <p>Los jueces no pueden ser reemplazados por sistemas de IA</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">👨‍⚖️≠🤖</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">⚠️🚨</span>
+                        <span class="emoji">⚠️</span>
                         <h4>Reconocimiento de Riesgos</h4>
                         <p>Alucinaciones y sesgos discriminatorios</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">🧠💭⚡</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">👁️✨</span>
+                        <span class="emoji">👁️</span>
                         <h4>Principios Éticos</h4>
                         <p>Transparencia, responsabilidad y control humano</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">🔍🤝👤</div>
                     </div>
                     <div class="point-card">
-                        <span class="emoji">🔐🛡️</span>
+                        <span class="emoji">🔐</span>
                         <h4>Protección de Privacidad</h4>
                         <p>Garantías en el manejo de datos personales</p>
-                        <div style="text-align: center; font-size: 1.5em; margin-top: 10px;">💾🔒👤</div>
                     </div>
                 </div>
                 <div class="quote">
-                    <div style="font-size: 1.5em; margin-bottom: 10px;">⚖️🏛️✨</div>
                     SE DEBE GARANTIZAR EL DEBIDO PROCESO Y LA AUTONOMÍA JUDICIAL, PILARES ESENCIALES EN UN ESTADO SOCIAL DE DERECHO
-                    <div style="font-size: 1.5em; margin-top: 10px;">🇨🇴⚖️🛡️</div>
                 </div>
             </div>
         </div>
@@ -729,39 +711,29 @@
         <!-- Slide 10: Conclusiones -->
         <div class="slide">
             <div class="slide-content">
-                <div style="font-size: 3em; margin-bottom: 20px;">🎯💭✨</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">🎯💭</div>
                 <h2>Conclusiones</h2>
-                <div style="font-size: 2em; margin-bottom: 20px;">👥🤝💡</div>
                 <div class="conclusions-grid">
                     <div class="conclusion-card">
-                        <div style="font-size: 2em; margin-bottom: 10px;">👩‍💼🛡️</div>
                         <h4>Madeleyn 🌟</h4>
                         <p>"La IA ofrece oportunidades extraordinarias para mejorar la sociedad, pero exige regulación cuidadosa y salvaguardias robustas que garanticen la protección de los derechos fundamentales en el entorno digital."</p>
-                        <div style="font-size: 1.5em; text-align: center; margin-top: 10px;">🚀🛡️💻</div>
                     </div>
                     <div class="conclusion-card">
-                        <div style="font-size: 2em; margin-bottom: 10px;">👨‍💼⚖️</div>
                         <h4>Sebastian 🏛️</h4>
                         <p>La Sentencia T-323 de 2024 crea un marco jurídico robusto que armoniza derecho nacional e internacional, garantizando que la responsabilidad final de las decisiones recaiga siempre en el ser humano.</p>
-                        <div style="font-size: 1.5em; text-align: center; margin-top: 10px;">📜🌍👤</div>
                     </div>
                     <div class="conclusion-card">
-                        <div style="font-size: 2em; margin-bottom: 10px;">👩‍🎓💡</div>
                         <h4>Viviana 🌈</h4>
                         <p>La IA debe estar al servicio de la humanidad, nunca al revés. El reto está en mantener la dignidad, libertad y derechos humanos en el centro de toda decisión tecnológica.</p>
-                        <div style="font-size: 1.5em; text-align: center; margin-top: 10px;">👥❤️🤖</div>
                     </div>
                     <div class="conclusion-card">
-                        <div style="font-size: 2em; margin-bottom: 10px;">👩‍⚖️🎯</div>
                         <h4>Vanessa ⚡</h4>
                         <p>Se requiere un marco regulatorio basado en derechos humanos que asegure un desarrollo tecnológico ético, transparente y al servicio de la justicia.</p>
-                        <div style="font-size: 1.5em; text-align: center; margin-top: 10px;">📋🔍⚖️</div>
                     </div>
                 </div>
                 <div class="quote" style="margin-top: 40px;">
-                    <div style="font-size: 2em; margin-bottom: 15px;">🙏✨🎉</div>
+                    <div style="font-size: 2em; margin-bottom: 15px;">🙏✨</div>
                     Por su atención y participación
-                    <div style="font-size: 2em; margin-top: 15px;">👏🤝💫</div>
                 </div>
             </div>
         </div>
